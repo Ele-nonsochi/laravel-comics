@@ -1,0 +1,413 @@
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar-nav li {
+    margin-right: 15px;
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .navbar-nav li .active {
+    color: #5252ff;
+    border-bottom: 2px solid #5252ff;
+    margin-bottom: 15px;
+  }
+  
+  .jumbotron {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .jumbotron img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  
+  .bg-color {
+    background-color: #1c1c1c;
+  }
+  
+  .bg-color h1 {
+    color: white;
+  }
+  
+  .row-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comics-section {
+    padding: 30px 0;
+    position: relative;
+  }
+  
+  .comics-section .container {
+    position: relative;
+  }
+  
+  .comics-section .comics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .comics-section .comics-container .current-series {
+    position: absolute;
+    top: -60px;
+    left: -75px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color: #0282f9;
+    padding: 15px 25px;
+    font-weight: bold;
+  }
+  
+  .comics-section .comics-container .current-series h5 {
+    margin: 0;
+  }
+  
+  .comics-section .comics-container button {
+    margin: auto;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color: #0282f9;
+    padding: 15px 25px;
+    font-weight: bold;
+  }
+  
+  .card-comics {
+    width: calc(16.6666666667% - 20px);
+    text-decoration: none;
+  }
+  
+  .card-comics:hover .cover-comics .overlay {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  
+  .card-comics .cover-comics {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .card-comics .cover-comics img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  
+  .card-comics .cover-comics .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-comics h5 {
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  footer {
+    background-image: url("/img/footer-bg.jpg");
+    padding-top: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  footer .bg-color-blue {
+    background-color: #0282f9;
+    padding: 30px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  footer .bg-color-blue section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .bg-color-blue section .my-card {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .bg-color-blue section .my-card .img-container {
+    width: 40px;
+    display: inline-block;
+  }
+  
+  footer .bg-color-blue section .my-card .img-container img {
+    width: 100%;
+  }
+  
+  footer .bg-color-blue section .my-card h5 {
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: white;
+  }
+  
+  footer .link-container {
+    padding-top: 137px;
+    padding-bottom: 30px;
+  }
+  
+  footer .link-container .col-7 {
+    display: flex;
+  }
+  
+  footer .link-container .col-7 .col-4 {
+    margin-right: 15px;
+  }
+  
+  footer .link-container .col-7 .col-4 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer .link-container .col-7 .col-4 ul li {
+    color: #78797b;
+    margin-bottom: 5px;
+  }
+  
+  footer .link-container .col-7 .col-4 ul li:first-child {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+  
+  footer .link-container .col-5 .img-container {
+    position: absolute;
+    top: 10px;
+  }
+  
+  footer .bg-color-grey {
+    background-color: #303030;
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  footer .bg-color-grey section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .bg-color-grey section .button-footer {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid lightskyblue;
+    padding: 15px 10px;
+  }
+  
+  footer .bg-color-grey section .button-footer a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  footer .bg-color-grey section .link-social {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .bg-color-grey section .link-social .follow {
+    text-transform: uppercase;
+    color: #1385ff;
+    margin-right: 20px;
+  }
+  
+  footer .bg-color-grey section .link-social .social img {
+    margin-left: 10px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col-4 {
+    width: 33.3333333333%;
+  }
+  
+  .col-5 {
+    width: 41.6666666667%;
+  }
+  
+  .col-7 {
+    width: 58.3333333333%;
+  }
+  
+  .bg-blue {
+    background-color: #0282f9;
+    height: 50px;
+    position: relative;
+  }
+  
+  .bg-blue .img-container {
+    position: absolute;
+    top: -250px;
+  }
+  
+  .bg-blue .img-container img {
+    height: 100%;
+  }
+  
+  .white-section {
+    padding: 30px 0;
+  }
+  
+  .white-section .row .col-8 .title-comic {
+    margin: 15px 0;
+  }
+  
+  .white-section .row .col-8 .cart {
+    background-color: green;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+  }
+  
+  .white-section .row .col-8 .cart .col-8 {
+    border-right: 1px solid gray;
+  }
+  
+  .white-section .row .col-8 .cart .col-8 .container-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .white-section .row .col-8 .cart .col-8 .container-price .price {
+    display: flex;
+  }
+  
+  .white-section .row .col-8 .cart .col-8 .container-price .price h6 {
+    margin-right: 5px;
+    color: lightgrey;
+  }
+  
+  .white-section .row .col-8 .cart .col-8 .container-price .available h6 {
+    text-transform: uppercase;
+    color: lightgrey;
+  }
+  
+  .white-section .row .col-8 .cart .col-4 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .white-section .row .col-8 .cart .col-4 h6 {
+    color: white;
+  }
+  
+  .bg-grey {
+    background-color: #f6f6f6;
+    padding: 30px 0;
+  }
+  
+  .bg-grey .row .col-8 .artist {
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+  }
+  
+  .bg-grey .row .col-8 .artist h5 {
+    width: 40%;
+  }
+  
+  .bg-grey .row .col-8 .artist a {
+    text-decoration: none;
+  }
+  
+  .bg-grey .row .col-8 .written {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+  }
+  
+  .bg-grey .row .col-8 .written h5 {
+    width: 40%;
+  }
+  
+  .bg-grey .row .col-8 .written a {
+    text-decoration: none;
+  }
+  
+  .bg-grey .row .col-4 .series {
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+  }
+  
+  .bg-grey .row .col-4 .series > h5 {
+    width: 40%;
+  }
+  
+  .bg-grey .row .col-4 .series .series-comic a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .bg-grey .row .col-4 .prices {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+  }
+  
+  .bg-grey .row .col-4 .prices > h5 {
+    width: 40%;
+  }
+  
+  .bg-grey .row .col-4 .prices .price-comic a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .bg-grey .row .col-4 .date {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+  }
+  
+  .bg-grey .row .col-4 .date > h5 {
+    width: 40%;
+  }
+  
+  .bg-grey .row .col-4 .date .date-comic a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
