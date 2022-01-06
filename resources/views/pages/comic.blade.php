@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                             <div class="col-4">
-                                <h6>Check available</h6>
+                                <h6>Check availability</h6>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,8 @@
                         <p>{{$comic['description']}}</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 text-end">
+                    <h6>ADVERTISEMENT</h6>
                     <img src={{ asset('img/adv.jpg') }} alt="">
                 </div>
             </div>
